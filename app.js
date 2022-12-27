@@ -11,7 +11,7 @@ const todoRoute = require('./routes/todoRouter');
 const uploadRoute = require('./routes/uploadRouter');
 const authMiddleware = require('./middleware/authentication');
 
-app.use(express.static('./public'));
+
 app.use(express.json());
 app.use(fileUpload({ useTempFiles: true }));
 
